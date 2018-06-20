@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<!-- Important to place your own stylesheet below the bootstrap
+	stylesheet so your styles will overwrite bootstraps -->
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<!-- container-fluid is a bootstrap class. hero is my own class for 
+	modifying the header. 'mb-3' stands for 'margin-bottom 3' which is a utility class for adding margins -->
+	<header class="container-fluid hero mb-3 d-flex justify-content-center align-items-center">
+		<h1 class="text-uppercase text-white">Bootstrap</h1>
+	</header>
+	<section class="container-fluid">
+		<!-- Each new row is defined with the bootstrap class: row -->
+		<div class="row mb-3 justify-content-center">
+			<div class="col-xs-12">
+				<h1>
+					<a href="https://hackerthemes.com/bootstrap-cheatsheet/">Bootstrap 4 Cheat Sheet</a>
+				</h1>
+			</div>
+		</div>
+		<div class="row mb-3">
+			<!-- We can make the columns in the row responsive by adding multiple classes. Everything is set from a 12 column grid. On small devices (xs) the column should occupy all columns. On medium devices (md) every column should occupy half the space (6 of 12). On large devices (lg) every column should take a third of the space (4 of 12). -->
+			<article class="col-sm-12 col-md-6 col-lg-4 p-2">
+				<!-- text-xs-center is a utility class from bootstrap -->
+				<h3>Wabadaba</h3>
+				<p>I have to tell you about the future. Where does he come from? Don't worry. As long as you hit that wire with the connecting hook at precisely 88 miles per hour, the instance the lightning strikes the tower, everything will be fine. Roads? Where we're going we don't need roads. Uh listen, do you know where Riverside Drive is?</p>
+			</article>
+			<article class="col-sm-12 col-md-6 col-lg-4 p-2">
+				<h3>Wollibolli</h3>
+				<p>Indeed I will, roll em. I, Doctor Emmett Brown, am about to embark on an historic journey. What have I been thinking of, I almost forgot to bring some extra plutonium. How did I ever expect to get back, one pallet one trip I must be out of my mind. What is it Einy? Oh my god, they found me, I don't know how but they found me. Run for it, Marty. That's George McFly? Right. Yeah well, you shouldn't drink. My god, do you know what this means? It means that this damn thing doesn't work at all.</p>
+			</article>
+			<article class="col-sm-12 col-md-6 col-lg-4 offset-md-3 offset-lg-0 p-2">
+				<h3>Cosilafi</h3>
+				<p>He laid out Biff in one punch. I never knew he had it in him. He never stood up to Biff in his life. Breakfast. That ain't no airplane, look. Does your mom know about tomorrow night? Yeah but George, Lorraine wants to go with you. Give her a break.</p>
+			</article>
+		</div>
+		<div class="row m-3">
+			<!-- All responsive classes presented here, not all are necessary tho, it depends on your content. Check which breakpoints you need. -->
+			<!-- alert and alert-* specifies a background and font-color for the divs -->
+			<section class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3  alert alert-success col-md-push-6">
+				<h3 class="alert-heading">Checked</h3>
+				<p>Checked, did not wreck.</p>
+			</section>
+			<section class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 alert alert-info">
+				<h3 class="alert-heading">Checking info</h3>
+				<p>Always check yourself.</p>
+			</section>
+			<section class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 alert alert-warning">
+				<h3 class="alert-heading">Check warning</h3>
+				<p>Have you checked yourself?</p>
+			</section>
+			<section class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 alert alert-danger">
+				<h3 class="alert-heading">Check danger</h3>
+				<p>You just wrecked yourself!</p>
+			</section>
+		</div>
+		<div class="row mb-3">
+			<!-- Only two responsive classes used here for example -->
+			<div class="col-xs-12 col-lg-6 mb-3">
+				<!-- img-fluid is a utility class for making images
+				responsive. 'rounded' is utitlity class for making rounded
+				corners -->
+				<img class="img-fluid rounded" src="images/party.jpg" alt="Party!">
+			</div>
+			<div class="col-xs-12 col-lg-6 mb-3">
+				<img class="img-fluid rounded" src="images/party.jpg" alt="Party!">
+			</div>
+		</div>
+		<footer class="row p-3 bg-dark text-center">
+			<div class="col-xs-12 col-sm-6 col-lg-2 p-2">
+			<!-- .btn is for styling a button. There are multiple styles
+			that you can apply to buttons, here are some of them. -->
+				<button class="btn btn-primary">Press me</button>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-lg-2 p-2">
+			<button class="btn btn-secondary">Press me</button>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-lg-2 p-2">
+				<button class="btn btn-success">Press me</button>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-lg-2 p-2">
+				<button class="btn btn-info">Press me</button>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-lg-2 p-2">
+				<button class="btn btn-warning">Press me</button>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-lg-2 p-2">
+				<button class="btn btn-danger">Press me</button>
+			</div>
+		</footer>
+	</section>
+</body>
+</html>
